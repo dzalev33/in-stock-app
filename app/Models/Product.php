@@ -9,6 +9,10 @@ class Product extends Model
 {
     use HasFactory;
 
+    public function track()
+    {
+        $this->stock->each->track();
+    }
 
     public function inStock()
     {
